@@ -1,0 +1,80 @@
+body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      display: grid; 
+      grid-template-areas:
+        "aside header"
+        "aside main"
+        "footer footer"; 
+      grid-template-columns: 220px 1fr; 
+      grid-template-rows: 65px 1fr 50px; 
+      min-height: 100vh;
+      height: 100vh;
+    }
+    aside {
+      grid-area: aside;
+      grid-row: 1 / 4;
+      background: #33078b88;
+      color: black;
+      padding: 10px;
+     
+  
+    }
+    header {
+      grid-area: header;
+      background: #537005a0;
+      color: black;
+      padding: 2px;
+      display: flex;
+      align-items: center;
+    }
+    main {
+      grid-area: main;
+      background: rgba(243, 214, 214, 0.57);
+      color: rgba(236, 209, 213, 0.508);
+      padding: 10px;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center; 
+    }
+   
+    .boxes {
+      display: flex;
+      gap: 30px;
+    }
+    .box1, .box2 {
+      width: 300px;
+      height: 300px;
+      color: white;
+      font-size: 18px;
+      padding: 5px;
+      box-sizing: border-box;
+      display: flex;
+      align-items: flex-start;
+    }
+    .box1 { background: rgba(1, 163, 79, 0.455); }
+    .box2 { background: rgba(4, 70, 47, 0.589); }
+
+    .main-text {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      font-size: 20px;
+      color: black;
+      text-align: left;
+    }
+
+     footer {
+      grid-area: footer;
+      background: #5120028b;
+      color: black;
+      padding: 5px;
+      display: flex;
+      align-items: center;
+      margin-left: 220px;
+    }
