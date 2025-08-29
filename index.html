@@ -1,23 +1,87 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marlon</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" contlanguageent="width=device-width, initial-scale=1.0"/>
+  <title>Student Portal</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
 </head>
 <body>
-  <div class="container">
-    <aside>ASIDE</aside>
-    <header>HEADER</header>
+  <div class="header">
+    <div class="container">
+      <div class="header-left">
+        
+        <img src="icon.webp"width="60px" height="60px">My Profile</h1>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#hobbies">Hobbies</a></li>
+        <li><a href="#program">Program Use</a></li>
+        <li><a href="#inquire">Inquire</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
 
-    <main> 
-            <div class="boxes">
-            <div class="main-text">MAIN</div>
-            <div class="box1">Box 1</div>
-            <div class="box2">Box 2</div>
-    </main>
-    </div class="footer">
-   <footer>FOOTER</footer>
+  <!-- Add space to prevent the fixed header from overlapping -->
+  <div style="height: 130px;"></div>
+
+  <div class="profile-sections">
+    <section id="about">
+      <h2>About Me</h2>
+      <p>Hello Everyone Im Marlon T. Rodin 33 years old.</p>
+    </section>
+
+    <section id="hobbies">
+      <h2>Hobbies</h2>
+      <ul>
+        <li>singing</li>
+        <li>drawing</li>
+        <li>hiking</li>
+        <li>cooking</li>
+      </ul>
+    </section>
+
+    <section id="program">
+      <h2>Program Use</h2>
+      <p>I Used java,python,c++,bisaya.</p>
+      <p><strong>Programing Language Used:</strong></p>
+      <ul>
+        <li>Java</li>
+        <li>Python</li>
+        <li>C++</li>
+        <li>bisaya</li>
+      </ul>
+    </section>
+
+  <section id="inquire">
+    <h2>Inquire</h2>
+      <form>
+        <input type="text" id="name" name="name" placeholder="Name" required><br>
+        <input type="email" id="email" name="email" placeholder="Email" required><br>
+        <textarea id="question" name="question" rows="4" placeholder="Type your question here..." required></textarea><br>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </div>
+
+<section>
+  <h1> My Location</h1>
+  <div class="embed-map-fixed"><div class="embed-map-container"><iframe class="embed-map-frame" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" 
+    
+  src="https://maps.google.com/maps?width=600&height=400&hl=en&q=holy%20child%20central%20colleges&t=&z=14&ie=UTF8&iwloc=B&output=embed"></iframe><a href="https://map-embed.org" style="font-size:2px!important;color:gray!important;position:absolute;bottom:0;left:0;z-index:1;max-height:10px;overflow:hidden">google maps generator</a><a href="https://heygames.org" style="font-size:2px!important;color:gray!important;position:absolute;bottom:0;left:0;z-index:1;max-height:10px;overflow:hidden">HeyGames</a><a href="https://cartoongames.io" style="font-size:2px!important;color:gray!important;position:absolute;bottom:0;left:0;z-index:1;max-height:10px;overflow:hidden">Cartoon Games</a></div><style>.embed-map-fixed{position:relative;text-align:right;width:1000px;height:1000px;}.embed-map-container{overflow:hidden;background:none!important;width:1000px;height:1000px;}.embed-map-frame{width:1000px!important;height:1000px!important;}</style></div>
+</section>
+
+  <!-- Footer Contact Section -->
+  <footer id="contact">
+    <h2>Contact</h2>
+    <p>Email: marlonrodin@gmail.com</p>
+    <p>Phone: 09664402840</p>
+  </footer>
 </body>
 </html>
